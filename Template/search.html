@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Search Data</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <form action="#">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" placeholder="Enter your search term">
+        <button type="submit">Search</button>
+    </form>
+    {% if location %}
+        {% for key, value in search_troupes.items %}
+            {% if location|lower in key|lower %}  # Case-insensitive substring match
+                <h2>{{ key }}</h2>
+                <p>{{ value }}</p>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        
+    {% endif %}
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if location %}
+    <h2>Search Results</h2>
+    <ul>
+        {% for troupe in location %}
+            <li>
+                <a href="{% url 'troupe_detail' location.pk %}">{{ troupe.name }}</a> ({{ troupe.location }})
+            </li>
+        
+    </ul>
+    {% endfor %}
+{% else %}
+    <p>No troupes found matching your criteria.</p>
+{% endif %}
+
+</body>
+</html>

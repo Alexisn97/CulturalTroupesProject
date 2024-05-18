@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Troupe Management System</title>
+    <link rel="stylesheet" href="{%static 'css/cultural.css'%}"/>
+
+</head>
+<body>
+    <header>
+        <h1>CTMS</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Troupes</a></li>
+                <li><a href="#">Book Troupe</a></li>
+                <li><a href="#">Contact</a></li>
+            
+            </ul>
+            <section id="search">
+                <!-- Search form -->
+                <form action="" method="GET">
+                    <input type="text" name="location" id="location" value="{{ search_query }}" placeholder="Enter Location">
+                    <a class="sea" href="/CulturalSelect">Search</a>
+                </form>
+            </section>
+        </nav>
+    </header>
+    <div >
+        <img  src="{% static 'css/dancer 1.jpg' %}"  style="width: 100%; opacity: 0.8;">
+    </div>
+    <h1 class="culture">Cultural Troupes Management System</h1>
+    <footer>
+        <p>&copy; 2024 Culture Troupe Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Troupe Management System</title>
+    <link rel="stylesheet" href="cultural.css">
+</head>
+<body>
+    <header>
+        <h1>Experience the World's Cultures</h1>
+        <p>Find and book captivating performances for your events.</p>
+    </header>
+    <main>
+        <section class="search-bar">
+            <h2>Find Your Perfect Troupe</h2>
+            <form action="#">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="City or Region">
+                <label for="type">Performance Type:</label>
+                <select name="type" id="type">
+                    <option value="">All Types</option>
+                    <option value="dance">Dance</option>
+                    <option value="music">Music</option>
+                    <option value="theater">Theater</option>
+                    </select>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section class="featured-troupes">
+            <h2>Featured Troupes</h2>
+            <div class="troupe-card">
+                <img src="11.jpg" alt="Troupe Image">
+                <h3>Troupe Name</h3>
+                <p>Location</p>
+                <a href="#">Learn More</a>
+            </div>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Culture Troupe Management System</p>
+    </footer>
+</body>
+</html> -->

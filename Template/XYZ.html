@@ -1,0 +1,238 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XYZ Company</title>
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+nav {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3e8e41;
+}
+
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+nav {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+nav {
+    background-color: #e0e0
+}
+.product-container{ 
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.product img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>XYZ Company</h1>
+        <p>Offering high-quality products for a better life</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <article class="product">
+                    <img src="{% static 'css/coca.jpg' %}" alt="Product 1">
+                    <h4>Product 1</h4>
+                    <p>A brief description of Product 1 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="{% static 'css/juice.jpg' %}" alt="Product 2">
+                    <h4>Product 2</h4>
+                    <p>A brief description of Product 2 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="{% static 'css/11.jpg' %}" alt="Product 3">
+                    <h4>Product 3</h4>
+                    <p>A brief description of Product 3 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="{% static 'css/coca.jpg' %}" alt="Product 4">
+                    <h4>Product 4</h4>
+                    <p>A brief description of Product 4 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="{% static 'css/11.jpg' %}" alt="Product 5">
+                    <h4>Product 5</h4>
+                    <p>A brief description of Product 5 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="{% static 'css/11.jpg' %}" alt="Product 6">
+                    <h4>Product 6</h4>
+                    <p>A brief description of Product 6 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+                <article class="product">
+                    <img src="{% static 'css/11.jpg' %}" alt="Product 7">
+                    <h4>Product 7</h4>
+                    <p>A brief description of Product 7 and its benefits.</p>
+                    <a href="#">Learn More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; XYZ Company 2024</p>
+    </footer>
+</body>
+</html>

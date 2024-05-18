@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Select</title>
+    <link rel="stylesheet" href="{%static 'css/cultural.css'%}"/>
+
+</head>
+<body>
+    <main>
+        {% for Event in list_event %}
+    <!-- <input type="Book" class="button"> -->
+        <section id="results">
+            <h2>Search Results</h2>
+            <!-- Display search results here -->
+            <div class="troupe-card">
+                <h3>Searched Results</h3>
+                <p>Location: {{Event.location}}</p>
+                <p>Performance: {{Event.type}}</p>
+                <p>Amount: {{Event.Amount}}</p>
+                <p>Amount: {{Event.Date}}</p>
+                <p>Amount: {{Event.Hours}}</p>
+
+
+
+                <a href="/booking">
+                <button>Book Now</button>
+                    
+                </a>
+            </div>
+            <!-- Repeat troupe card for each search result -->
+        </section>
+        {% endfor %}
+</main>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 20px;
+}
+
+#search form input {
+    padding: 10px;
+    margin-right: 10px;
+}
+#search{
+    background: none;
+    position: relative;
+    left: 450px;
+    top: -70px;
+
+}
+h1{
+    position: relative;
+    right: 540px;
+}
+ul{
+    position: relative;
+    top: -20px;
+    right: 50px;
+}
+.culture{
+    color: white;
+    position: relative;
+    align-items: center;
+    top: -700px;
+    left: 300px;
+}
+
+
+
+
+
+
+
+
+#results .troupe-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.sea{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+/* body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-bar {
+    margin-bottom: 40px;
+}
+
+.search-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.search-bar label {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.featured-troupes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.troupe-card {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.troupe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.troupe-card h3,
+.troupe-card p {
+    margin: 10px 0;
+}
+
+.troupe-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    
+} */

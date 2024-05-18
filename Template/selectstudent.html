@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+</head>
+<body>
+    <P>all student has been selected</P>
+    <table>
+        <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Telephone Number</th>
+        <th colspan="2" align="center" style="text-align: center;">Action</th>
+</tr>
+<tbody>
+    {% for Student in select %}
+    <tr>
+       <td>{{Student.id}}</td> 
+       <td>{{Student.first_name}}</td> 
+       <td>{{Student.last_name}}</td> 
+       <td>{{Student.telephone_number}}</td> 
+       <td ><a href="DeleteStudent/{{Student.id}}">Delete</td>
+       <td ><a href="UpdateStudent/{{Student.id}}">Update</td>
+
+        
+    </tr>
+    {% endfor %}
+</tbody>
+    </table>
+    
+</body>
+</html>
